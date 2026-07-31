@@ -3,10 +3,15 @@ services:
     name: cat-dog-classification
     runtime: python
 
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      apt-get update && apt-get install -y git-lfs
+      git lfs install
+      git lfs pull
+      pip install --upgrade pip
+      pip install -r requirements.txt
 
     startCommand: gunicorn app:app
 
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.11
+        value: 3.11.9
