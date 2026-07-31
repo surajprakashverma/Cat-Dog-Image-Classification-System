@@ -17,7 +17,7 @@ https://img.shields.io/badge/Python-3.11+-blue.svg
 
 **🚀 Try it live:**
 
-https://your-render-app.onrender.com
+https://cat-dog-classification-v4ob.onrender.com
 
 > _Note: Render free-tier services may take a few seconds to wake up after inactivity._
 
