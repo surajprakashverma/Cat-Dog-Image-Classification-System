@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd3b2b93844ae5171255e32285509ebedd5f3edb66837b7dcc6a0c141c1f007d
-size 239
+services:
+  - type: web
+    name: cat-dog-classification
+    runtime: python
+
+    buildCommand: pip install -r requirements.txt
+
+    startCommand: gunicorn app:app
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
