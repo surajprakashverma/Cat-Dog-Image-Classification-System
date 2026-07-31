@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8063309f58adf95a663dcb7f0dddf40e899fbe81f8c02d37e9b66c7c1d26be9f
-size 80
+Flask==3.1.2
+tensorflow==2.20.0
+numpy==2.3.2
+Pillow==11.3.0
+gunicorn==23.0.0
